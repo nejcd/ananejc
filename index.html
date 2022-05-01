@@ -86,10 +86,8 @@
     <!---->
     <!--    </div>-->
 </div>
-<!--<script src="node_modules/fullpage.js/vendors/easings.min.js"></script>-->
-<!--<script type="text/javascript" src="node_modules/fullpage.js/dist/fullpage.js"></script>-->
-<script src="easings.min.js"></script>
-<script type="text/javascript" src="fullpage.js"></script>
+<script src="node_modules/fullpage.js/vendors/easings.min.js"></script>
+<script type="text/javascript" src="node_modules/fullpage.js/dist/fullpage.js"></script>
 <script>
 
     window.addEventListener('load', videoScroll);
@@ -102,28 +100,30 @@
         video.play()
         video.muted = false;
     }
-    var myFullpage = new fullpage('#fullpage', {
-        licenseKey: 'DDDE283E-93CC4605-A3EC36C6-555D2481',
 
-        autoScrolling: true,
-        dragAndMove: 'fingersonly',
-        fitToSection: true,
+    // var myFullpage = new fullpage('#fullpage', {
+    //     licenseKey: 'DDDE283E-93CC4605-A3EC36C6-555D2481',
+    //
+    //     autoScrolling: true,
+    //     dragAndMove: 'fingersonly',
+    //     fitToSection: true,
+    //
+    //     normalScrollElements: '.scroll',
+    //     scrollOverflow: true,
+    //     scrollOverflowReset: true,
+    //
+    //     //responsive
+    //     responsiveHeight: 576,
+    //     responsiveWidth: 992,
+    //
+    //     verticalCentered: false,
+    //
+    //     //navigation
+    //     navigation: false,
+    //
+    //     sectionsColor: ['#f2f2f2', '#ffffff', '#bebebe', 'whitesmoke', '#ccddff']
+    // });
 
-        normalScrollElements: '.scroll',
-        scrollOverflow: true,
-        scrollOverflowReset: true,
-
-        //responsive
-        responsiveHeight: 576,
-        responsiveWidth: 992,
-
-        verticalCentered: false,
-
-        //navigation
-        navigation: false,
-
-        sectionsColor: ['#f2f2f2', '#ffffff', '#bebebe', 'whitesmoke', '#ccddff']
-    });
 </script>
 </body>
 </html>
