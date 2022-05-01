@@ -162,12 +162,15 @@
     color: #ffffff;
     font-family: "My Custom Font";
     text-align: center;
-    font-size: x-large;
     font-weight: lighter; }
+    @media screen and (max-width: 425px) {
+      .notes-section .notes .note-2 {
+        font-size: larger; } }
+    @media screen and (min-width: 1200px) {
+      .notes-section .notes .note-2 {
+        font-size: x-large; } }
 
 .video-holder {
-  height: 100vh;
-  /* <--- This is what you need */
   margin: 0px; }
   @media screen and (max-width: 425px) {
     .video-holder {

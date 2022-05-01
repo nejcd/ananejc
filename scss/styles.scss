@@ -6,6 +6,10 @@ $brand-color: #5a5a5a;
   margin: 0;
   padding: 0;
 }
+//
+//.fullpage {
+//  height: 100vh;
+//}
 
 @mixin respond-to($breakpoint) {
   @if $breakpoint == "xs" {
@@ -342,13 +346,19 @@ $brand-color: #5a5a5a;
     color: $color-white;
     font-family: "My Custom Font";
     text-align: center;
-    font-size: x-large;
+    //font-size: x-large;
     font-weight: lighter;
+
+    .note-2 {
+      @include respond-to(xs) {
+        font-size: larger;
+      }
+      @include respond-to(lg) {
+        font-size: x-large;
+      }
+    }
   }
 
-  .note-2 {
-
-  }
 }
 
 //.timeline-section {
@@ -362,14 +372,13 @@ $brand-color: #5a5a5a;
 
 
 .video-holder {
-  height: 100vh; /* <--- This is what you need */
+  //height: 100vh; /* <--- This is what you need */
   margin: 0px;
   @include respond-to(xs) {
     padding: 0px;
   }
   @include respond-to(lg) {
     padding: 5%;
-
   }
 }
 
