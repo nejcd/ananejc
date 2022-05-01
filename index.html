@@ -89,10 +89,18 @@
 <script src="node_modules/fullpage.js/vendors/easings.min.js"></script>
 <script type="text/javascript" src="node_modules/fullpage.js/dist/fullpage.js"></script>
 <script>
-    document.addEventListener('scroll', function() {
-        video.muted = false;
+
+    window.addEventListener('load', videoScroll);
+    window.addEventListener('scroll', videoScroll);
+    window.addEventListener('touchmove', videoScroll);
+    window.addEventListener('touch', videoScroll);
+
+    function videoScroll() {
+        console.log('play')
         video.play()
-    });
+        video.muted = false;
+    }
+
 </script>
 <!--<script type="text/javascript">-->
 <!--    var myFullpage = new fullpage('#fullpage', {-->
