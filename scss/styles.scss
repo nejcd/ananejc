@@ -2,6 +2,11 @@ $color-white: #ffffff;
 $brand-color-g: #d5b800;
 $brand-color: #5a5a5a;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin respond-to($breakpoint) {
   @if $breakpoint == "xs" {
     @media screen and (max-width: 425px) {
@@ -320,8 +325,19 @@ $brand-color: #5a5a5a;
 //  align-items: flex-end;
 //}
 
+.fullpage {
+  margin: 0px;
+}
+
 .video-holder {
-  padding: 5%;
+  margin: 0px;
+  @include respond-to(xs) {
+      padding: 0px;
+  }
+    @include respond-to(lg) {
+      padding: 5%;
+
+    }
 }
 
 @font-face {

@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 .note {
   color: #5a5a5a; }
 
@@ -146,8 +150,17 @@
           position: absolute;
           margin-top: 100px; }
 
+.fullpage {
+  margin: 0px; }
+
 .video-holder {
-  padding: 5%; }
+  margin: 0px; }
+  @media screen and (max-width: 425px) {
+    .video-holder {
+      padding: 0px; } }
+  @media screen and (min-width: 1200px) {
+    .video-holder {
+      padding: 5%; } }
 
 @font-face {
   font-family: "My Custom Font";
