@@ -350,12 +350,20 @@ $brand-color: #5a5a5a;
     font-weight: lighter;
 
     .note-2 {
-      @include respond-to(xs) {
-        font-size: larger;
-      }
-      @include respond-to(lg) {
+      //@include respond-to(xs) {
         font-size: x-large;
-      }
+      //}
+      //@include respond-to(lg) {
+      //  font-size: x-large;
+      //}
+    }
+    .note-3 {
+      //@include respond-to(xs) {
+        font-size: medium;
+      //}
+      //@include respond-to(lg) {
+      //  font-size: larger;
+      //}
     }
   }
 
@@ -378,7 +386,7 @@ $brand-color: #5a5a5a;
     padding: 0px;
   }
   @include respond-to(lg) {
-    padding: 5%;
+    padding: 0px;
   }
 }
 
