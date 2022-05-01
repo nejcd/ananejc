@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ana in Nejc</title>
+
+    <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/fullpage.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+<body>
+<div id="fullpage">
+    <div class="section fp-auto-height-responsive video-section">
+        <div class="video-holder">
+            <video id="video" class="video" playsinline muted autoplay loop> <source src="assets/video2.mp4" type="video/mp4"> </video>
+        </div>
+    </div>
+    <div class="section fp-auto-height-responsive timeline-section">
+        <section class="ps-timeline-sec">
+            <div class="container">
+                <ol class="ps-timeline">
+                    <li>
+                        <div class="img-handler-top">
+                            <!--                            <img src="http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_03.png" alt=""/>-->
+                            <p class="note">Zbor svatov</p>
+                        </div>
+                        <div class="ps-bot">
+                            <!--                            <p>Zbor svatov</p>-->
+                        </div>
+                        <span class="ps-sp-top">14:00</span>
+                    </li>
+                    <li>
+                        <div class="img-handler-top">
+                            <!--                            <img src="assets/love.gif" width="36px" alt=""/>-->
+                            <p class="note">Poročni obred</p>
+                        </div>
+                        <div class="ps-top">
+                            <!--                            <p>Poročni obred</p>-->
+                        </div>
+                        <span class="ps-sp-top">15:00</span>
+                    </li>
+                    <li>
+                        <div class="img-handler-top">
+                            <!--                            <img src="http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_05.png" alt=""/>-->
+                            <p class="note">Večerja</p>
+                        </div>
+                        <div class="ps-bot">
+                            <!--                            <p>Večerja</p>-->
+                        </div>
+                        <span class="ps-sp-top">17:30</span>
+                    </li>
+                    <li>
+                        <div class="img-handler-top">
+                            <!--                            <img src="http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_10.png" alt=""/>-->
+                            <p class="note">Torta</p>
+                        </div>
+                        <div class="ps-top">
+                            <!--                            <p>Torta</p>-->
+                        </div>
+                        <span class="ps-sp-top">22:00</span>
+                    </li>
+                    <li>
+                        <div class="img-handler-top">
+                            <!--                            <img src="http://www.physology.co.uk/wp-content/uploads/2016/02/ps-elem_05.png" alt=""/>-->
+                            <p class="note">Zabava</p>
+                        </div>
+                        <div class="ps-bot">
+                            <!--                            <p>Zabava</p>-->
+                        </div>
+                        <span class="ps-sp-top"> 02:00</span>
+                        <!--                        <img src="assets/arrow.png" width="36px" alt=""/>-->
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+
+    </div>
+    <div class="section notes-section">
+        <div class="notes">
+            <p class="note-2">Udeležbo nama prosim sporočite do 1. 6. 2022.</p>
+            <p class="note-2">V primeru da bi nama želeli kaj podariti,</p>
+            <p class="note-2">bova zelo vesela prispevkov za najin bodoči domek.</p>
+        </div>
+    </div>
+    <!--    <div class="section notes-section-txt">-->
+    <!---->
+    <!--    </div>-->
+</div>
+<script src="node_modules/fullpage.js/vendors/easings.min.js"></script>
+<script type="text/javascript" src="node_modules/fullpage.js/dist/fullpage.js"></script>
+<script>
+    document.addEventListener('scroll', function() {
+        video.muted = false;
+        video.play()
+    });
+</script>
+<!--<script type="text/javascript">-->
+<!--    var myFullpage = new fullpage('#fullpage', {-->
+
+<!--        autoScrolling: true,-->
+<!--        dragAndMove: 'fingersonly',-->
+<!--        fitToSection: true,-->
+
+<!--        normalScrollElements: '.scroll',-->
+<!--        scrollOverflow: true,-->
+<!--        scrollOverflowReset: true,-->
+
+<!--        //responsive-->
+<!--        responsiveHeight: 576,-->
+<!--        responsiveWidth: 992,-->
+
+<!--        verticalCentered: false,-->
+
+<!--        //navigation-->
+<!--        navigation: false,-->
+
+<!--        sectionsColor: ['#f2f2f2', '#ffffff', '#bebebe', 'whitesmoke', '#ccddff']-->
+<!--    });-->
+<!--</script>-->
+</body>
+</html>
+
+<style>
+    .video {
+        width: 100%;
+    }
+
+</style>
