@@ -150,24 +150,7 @@
           position: absolute;
           margin-top: 100px; }
 
-.fullpage {
-  margin: 0px; }
-
-.video-holder {
-  margin: 0px; }
-  @media screen and (max-width: 425px) {
-    .video-holder {
-      padding: 0px; } }
-  @media screen and (min-width: 1200px) {
-    .video-holder {
-      padding: 5%; } }
-
-@font-face {
-  font-family: "My Custom Font";
-  src: url("../assets/BodoniModa_28pt-Regular.ttf") format("truetype"); }
-
 .notes-section {
-  height: 500px;
   background-image: url("../assets/villa-fab-b2-crop-blur.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -181,3 +164,18 @@
     text-align: center;
     font-size: x-large;
     font-weight: lighter; }
+
+.video-holder {
+  height: 100vh;
+  /* <--- This is what you need */
+  margin: 0px; }
+  @media screen and (max-width: 425px) {
+    .video-holder {
+      padding: 0px; } }
+  @media screen and (min-width: 1200px) {
+    .video-holder {
+      padding: 5%; } }
+
+@font-face {
+  font-family: "My Custom Font";
+  src: url("../assets/BodoniModa_28pt-Regular.ttf") format("truetype"); }

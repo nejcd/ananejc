@@ -314,45 +314,16 @@ $brand-color: #5a5a5a;
       }
     }
   }
+
+
 }
 
-//.timeline-section {
-//  background-image: url(assets/villa-fab-b1.jpeg);
-//  background-repeat: no-repeat;
-//  background-position: top center;
-//  background-size: cover;
-//  display: flex;
-//  align-items: flex-end;
-//}
-
-.fullpage {
-  margin: 0px;
-}
-
-.video-holder {
-  margin: 0px;
-  @include respond-to(xs) {
-      padding: 0px;
-  }
-    @include respond-to(lg) {
-      padding: 5%;
-
-    }
-}
-
-@font-face {
-  font-family: "My Custom Font";
-  src: url("../assets/BodoniModa_28pt-Regular.ttf") format('truetype');
-}
-
-//p.customfont {
-//  font-family: "My Custom Font", Verdana, Tahoma;
-//}
 
 .notes-section {
+  //height: 100vh; /* <--- This is what you need */
 
   //padding-bottom: 70%;
-  height: 500px;
+  //height: 500px;
   background-image: url("../assets/villa-fab-b2-crop-blur.png");
   background-repeat: no-repeat;
   //filter: blur(6px);
@@ -379,3 +350,35 @@ $brand-color: #5a5a5a;
 
   }
 }
+
+//.timeline-section {
+//  background-image: url(assets/villa-fab-b1.jpeg);
+//  background-repeat: no-repeat;
+//  background-position: top center;
+//  background-size: cover;
+//  display: flex;
+//  align-items: flex-end;
+//}
+
+
+.video-holder {
+  height: 100vh; /* <--- This is what you need */
+  margin: 0px;
+  @include respond-to(xs) {
+    padding: 0px;
+  }
+  @include respond-to(lg) {
+    padding: 5%;
+
+  }
+}
+
+@font-face {
+  font-family: "My Custom Font";
+  src: url("../assets/BodoniModa_28pt-Regular.ttf") format('truetype');
+}
+
+//p.customfont {
+//  font-family: "My Custom Font", Verdana, Tahoma;
+//}
+
