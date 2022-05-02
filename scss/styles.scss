@@ -1,5 +1,6 @@
 $color-white: #ffffff;
 $brand-color-g: #d5b800;
+$brand-color-g: #c7b0a4;
 $brand-color: #5a5a5a;
 
 * {
@@ -19,7 +20,7 @@ $brand-color: #5a5a5a;
       @content;
     }
   } @else if $breakpoint == "sm" {
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: 425px) and (max-width: 991px) {
       @content;
     }
   }
@@ -56,6 +57,7 @@ $brand-color: #5a5a5a;
 .timeline-section {
   .note {
     color: $brand-color;
+    font-size: 18px;
   }
 
   min-height: 300px;
@@ -330,7 +332,6 @@ $brand-color: #5a5a5a;
     color: $color-white;
     font-family: "My Custom Font";
     //font-size: x-large;
-    font-weight: bold;
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -338,27 +339,39 @@ $brand-color: #5a5a5a;
 
 
     .note-2 {
-      //@include respond-to(xs) {
       text-align: center;
-      font-size: 38px;
+      font-size: 28px;
       margin-left: 22px;
       margin-right: 22px;
-      //}
-      //@include respond-to(lg) {
-      //  font-size: x-large;
-      //}
+      @include respond-to(lg) {
+        font-size: 38px;
+        font-weight: bold;
+
+      }
+      @include respond-to(sm) {
+        font-size: 38px;
+        font-weight: bold;
+
+      }
     }
 
     .note-3 {
       //@include respond-to(xs) {
       text-align: center;
-      font-size: 26px;
+      font-size: 18px;
       margin-left: 30px;
       margin-right: 30px;
       //}
-      //@include respond-to(lg) {
-      //  font-size: larger;
-      //}
+      @include respond-to(lg) {
+        font-size: 26px;
+        font-weight: bold;
+
+      }
+      @include respond-to(sm) {
+        font-size: 26px;
+        font-weight: bold;
+
+      }
     }
   }
 
