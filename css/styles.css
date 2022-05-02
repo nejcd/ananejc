@@ -107,7 +107,7 @@
       list-style: none; }
       @media (min-width: 768px) and (max-width: 991px) {
         .timeline-section .ps-timeline-sec .container ol.ps-timeline {
-          margin: 500px 0; } }
+          margin: 400px 0; } }
       .timeline-section .ps-timeline-sec .container ol.ps-timeline li {
         float: left;
         width: 20%;
@@ -186,11 +186,14 @@
     font-weight: lighter;
     position: absolute;
     bottom: 0px;
-    width: 100%;
-    padding-bottom: 20px; }
+    padding-bottom: 40px; }
     .notes-section .notes .note-2 {
       text-align: center;
-      font-size: 28px; }
+      font-size: 28px;
+      margin-left: 20px;
+      margin-right: 20px; }
     .notes-section .notes .note-3 {
       text-align: center;
-      font-size: 18px; }
+      font-size: 18px;
+      margin-left: 20px;
+      margin-right: 20px; }

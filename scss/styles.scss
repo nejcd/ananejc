@@ -198,7 +198,7 @@ $brand-color: #5a5a5a;
 
         &.ps-timeline {
           @include respond-to(sm) {
-            margin: 500px 0;
+            margin: 400px 0;
           }
           margin: 300px 0;
           padding: 0;
@@ -333,14 +333,16 @@ $brand-color: #5a5a5a;
     font-weight: lighter;
     position: absolute;
     bottom: 0px;
-    width: 100%;
-    padding-bottom: 20px;
+    //max-width: 100%;
+    padding-bottom: 40px;
 
 
     .note-2 {
       //@include respond-to(xs) {
       text-align: center;
       font-size: 28px;
+      margin-left: 20px;
+      margin-right: 20px;
       //}
       //@include respond-to(lg) {
       //  font-size: x-large;
@@ -351,6 +353,8 @@ $brand-color: #5a5a5a;
       //@include respond-to(xs) {
       text-align: center;
       font-size: 18px;
+      margin-left: 20px;
+      margin-right: 20px;
       //}
       //@include respond-to(lg) {
       //  font-size: larger;
