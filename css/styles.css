@@ -105,9 +105,6 @@
       padding: 0;
       border-top: 2px solid #d5b800;
       list-style: none; }
-      @media (min-width: 768px) and (max-width: 991px) {
-        .timeline-section .ps-timeline-sec .container ol.ps-timeline {
-          margin: 400px 0; } }
       .timeline-section .ps-timeline-sec .container ol.ps-timeline li {
         float: left;
         width: 20%;
@@ -183,18 +180,18 @@
   .notes-section .notes {
     color: #ffffff;
     font-family: "My Custom Font";
-    font-weight: lighter;
+    font-weight: bold;
     position: absolute;
     bottom: 0px;
     width: 100%;
-    padding-bottom: 40px; }
+    padding-bottom: 18px; }
     .notes-section .notes .note-2 {
       text-align: center;
-      font-size: 28px;
-      margin-left: 20px;
-      margin-right: 20px; }
+      font-size: 38px;
+      margin-left: 22px;
+      margin-right: 22px; }
     .notes-section .notes .note-3 {
       text-align: center;
-      font-size: 18px;
-      margin-left: 20px;
-      margin-right: 20px; }
+      font-size: 26px;
+      margin-left: 30px;
+      margin-right: 30px; }
