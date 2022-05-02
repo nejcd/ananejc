@@ -57,11 +57,13 @@ $brand-color: #5a5a5a;
     color: $brand-color;
     font-size: 18px;
   }
+  min-height: 300px;
 
-  //@include respond-to(xs) {
-  //  min-height: 300px;
-  //}
-  height: 300px;
+
+  @include respond-to(sm) {
+    height: 300px;
+  }
+  //height: 300px;
   .ps-timeline-sec {
     //position: relative;
     background: $color-white;
