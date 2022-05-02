@@ -2,95 +2,118 @@
   margin: 0;
   padding: 0; }
 
-.note {
-  color: #5a5a5a; }
+@font-face {
+  font-family: "My Custom Font";
+  src: url("../assets/BodoniModa_28pt-Regular.ttf") format("truetype"); }
 
-.ps-timeline-sec {
-  background: #ffffff;
-  font-family: "My Custom Font"; }
-  .ps-timeline-sec .container {
-    position: relative; }
+.fullpage {
+  height: 100vh; }
+
+.video-section .video-holder {
+  margin: 0px; }
+  @media screen and (max-width: 425px) {
+    .video-section .video-holder {
+      padding: 0px; } }
+  @media screen and (min-width: 1200px) {
+    .video-section .video-holder {
+      padding: 0px; } }
+
+.timeline-section {
+  min-height: 300px; }
+  .timeline-section .note {
+    color: #5a5a5a; }
+  .timeline-section .ps-timeline-sec {
+    background: #ffffff;
+    font-family: "My Custom Font"; }
     @media screen and (max-width: 425px) {
-      .ps-timeline-sec .container ol.ps-timeline {
-        margin: 130px 0 !important;
-        border-left: 2px solid #d5b800;
-        padding-left: 0 !important;
-        padding-top: 120px !important;
-        border-top: 0 !important;
-        margin-left: 25px !important; }
-        .ps-timeline-sec .container ol.ps-timeline li {
-          height: 220px;
-          float: none !important;
-          width: inherit !important; }
-          .ps-timeline-sec .container ol.ps-timeline li:nth-child(2) .img-handler-bot img {
-            width: 70px; }
-          .ps-timeline-sec .container ol.ps-timeline li:last-child {
-            margin: 0;
-            bottom: 0 !important;
-            height: 120px; }
-            .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot {
-              bottom: 40px !important;
-              width: 40% !important;
-              margin-left: 25px !important;
-              margin-top: 0 !important; }
-              .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot img {
-                width: 100%; }
-            .ps-timeline-sec .container ol.ps-timeline li:last-child .ps-top {
-              margin-bottom: 0 !important;
-              top: 20px;
-              width: 50% !important; }
-          .ps-timeline-sec .container ol.ps-timeline li span {
-            left: 0 !important; }
-            .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
-              content: none !important; }
-            .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after {
-              content: none !important; }
-            .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before {
-              content: none !important; }
-            .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:after {
-              content: none !important; }
-          .ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
-            position: absolute !important;
-            bottom: 150px !important;
-            width: 30% !important;
-            float: left !important;
-            margin-left: 35px !important;
-            margin-bottom: 0 !important; }
-            .ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
+      .timeline-section .ps-timeline-sec .container {
+        padding-left: 30px; } }
+    @media screen and (max-width: 425px) {
+      .timeline-section .ps-timeline-sec .container ol {
+        padding-left: 30px; }
+        .timeline-section .ps-timeline-sec .container ol.ps-timeline {
+          margin: 130px 0 !important;
+          border-left: 2px solid #d5b800;
+          padding-left: 0 !important;
+          padding-top: 120px !important;
+          border-top: 0 !important;
+          margin-left: 25px !important; }
+          .timeline-section .ps-timeline-sec .container ol.ps-timeline li {
+            height: 220px;
+            float: none !important;
+            width: inherit !important; }
+            .timeline-section .ps-timeline-sec .container ol.ps-timeline li:nth-child(2) .img-handler-bot img {
+              width: 70px; }
+            .timeline-section .ps-timeline-sec .container ol.ps-timeline li:last-child {
+              margin: 0;
+              bottom: 0 !important;
+              height: 120px; }
+              .timeline-section .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot {
+                bottom: 40px !important;
+                width: 40% !important;
+                margin-left: 25px !important;
+                margin-top: 0 !important; }
+                .timeline-section .ps-timeline-sec .container ol.ps-timeline li:last-child .img-handler-bot img {
+                  width: 100%; }
+              .timeline-section .ps-timeline-sec .container ol.ps-timeline li:last-child .ps-top {
+                margin-bottom: 0 !important;
+                top: 20px;
+                width: 50% !important; }
+            .timeline-section .ps-timeline-sec .container ol.ps-timeline li span {
+              left: 0 !important; }
+              .timeline-section .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
+                content: none !important; }
+              .timeline-section .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after {
+                content: none !important; }
+              .timeline-section .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before {
+                content: none !important; }
+              .timeline-section .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:after {
+                content: none !important; }
+            .timeline-section .ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
+              position: absolute !important;
+              bottom: 150px !important;
+              width: 30% !important;
+              float: left !important;
+              margin-left: 35px !important;
+              margin-bottom: 0 !important; }
+              .timeline-section .ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
+                margin: 0 auto !important;
+                width: 80% !important; }
+            .timeline-section .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
+              position: absolute !important;
+              bottom: 115px !important;
+              width: 30% !important;
+              float: left !important;
+              margin-left: 35px !important;
+              margin-bottom: 0 !important; }
+            .timeline-section .ps-timeline-sec .container ol.ps-timeline li p {
+              text-align: left !important;
+              width: 100% !important;
               margin: 0 auto !important;
-              width: 80% !important; }
-          .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
-            position: absolute !important;
-            bottom: 115px !important;
-            width: 30% !important;
-            float: left !important;
-            margin-left: 35px !important;
-            margin-bottom: 0 !important; }
-          .ps-timeline-sec .container ol.ps-timeline li p {
-            text-align: left !important;
-            width: 100% !important;
-            margin: 0 auto !important;
-            margin-top: 0px !important; }
-          .ps-timeline-sec .container ol.ps-timeline li .ps-top {
-            width: 60% !important;
-            float: right !important;
-            right: 0;
-            top: -40px; }
-          .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
-            width: 60% !important;
-            right: 0;
-            top: -40px; } }
-    .ps-timeline-sec .container ol.ps-timeline {
-      margin: 390px 0;
+              margin-top: 0px !important; }
+            .timeline-section .ps-timeline-sec .container ol.ps-timeline li .ps-top {
+              width: 60% !important;
+              float: right !important;
+              right: 0;
+              top: -40px; }
+            .timeline-section .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
+              width: 60% !important;
+              right: 0;
+              top: -40px; } }
+    .timeline-section .ps-timeline-sec .container ol.ps-timeline {
+      margin: 300px 0;
       padding: 0;
       border-top: 2px solid #d5b800;
       list-style: none; }
-      .ps-timeline-sec .container ol.ps-timeline li {
+      @media (min-width: 768px) and (max-width: 991px) {
+        .timeline-section .ps-timeline-sec .container ol.ps-timeline {
+          margin: 500px 0; } }
+      .timeline-section .ps-timeline-sec .container ol.ps-timeline li {
         float: left;
         width: 20%;
         padding-top: 30px;
         position: relative; }
-        .ps-timeline-sec .container ol.ps-timeline li span {
+        .timeline-section .ps-timeline-sec .container ol.ps-timeline li span {
           width: 100px;
           height: 100px;
           margin-left: -50px;
@@ -105,7 +128,7 @@
           position: absolute;
           top: -50px;
           left: 50%; }
-          .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
+          .timeline-section .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
             content: '';
             color: #d5b800;
             width: 2px;
@@ -114,7 +137,7 @@
             position: absolute;
             top: -50px;
             left: 50%; }
-          .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before {
+          .timeline-section .ps-timeline-sec .container ol.ps-timeline li span.ps-sp-bot:before {
             content: '';
             color: #d5b800;
             width: 2px;
@@ -123,60 +146,51 @@
             position: absolute;
             bottom: -50px;
             left: 50%; }
-        .ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
+        .timeline-section .ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
           position: absolute;
           bottom: 0;
           margin-bottom: 130px;
           width: 100%; }
-          .ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
+          .timeline-section .ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
             display: table;
             margin: 0 auto; }
-        .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
+        .timeline-section .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot {
           position: absolute;
           margin-top: 60px;
           width: 100%; }
-          .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot img {
+          .timeline-section .ps-timeline-sec .container ol.ps-timeline li .img-handler-bot img {
             display: table;
             margin: 0 auto; }
-        .ps-timeline-sec .container ol.ps-timeline li p {
+        .timeline-section .ps-timeline-sec .container ol.ps-timeline li p {
           text-align: center;
           width: 80%;
           margin: 0 auto; }
-        .ps-timeline-sec .container ol.ps-timeline li .ps-top {
+        .timeline-section .ps-timeline-sec .container ol.ps-timeline li .ps-top {
           position: absolute;
           bottom: 0;
           margin-bottom: 100px; }
-        .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
+        .timeline-section .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
           position: absolute;
           margin-top: 100px; }
 
 .notes-section {
-  background-image: url("../assets/villa-fab-b2-crop-blur.png");
+  height: 500px;
+  background-image: url("../assets/villa-fab-b2-blur.png");
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  backdrop-filter: blur(10px);
-  overflow: auto; }
+  background-position: center;
+  background-size: cover;
+  position: relative; }
   .notes-section .notes {
-    margin: 64px;
-    padding: 32px;
     color: #ffffff;
     font-family: "My Custom Font";
-    text-align: center;
-    font-weight: lighter; }
+    font-weight: lighter;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-bottom: 20px; }
     .notes-section .notes .note-2 {
-      font-size: x-large; }
+      text-align: center;
+      font-size: 28px; }
     .notes-section .notes .note-3 {
-      font-size: medium; }
-
-.video-holder {
-  margin: 0px; }
-  @media screen and (max-width: 425px) {
-    .video-holder {
-      padding: 0px; } }
-  @media screen and (min-width: 1200px) {
-    .video-holder {
-      padding: 0px; } }
-
-@font-face {
-  font-family: "My Custom Font";
-  src: url("../assets/BodoniModa_28pt-Regular.ttf") format("truetype"); }
+      text-align: center;
+      font-size: 18px; }
