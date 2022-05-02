@@ -91,7 +91,7 @@
     window.addEventListener('touch', videoScroll);
 
     function videoScroll() {
-        console.log('play')
+        video.controls = window.innerWidth <= 1200;
         video.play()
         video.muted = false;
     }
